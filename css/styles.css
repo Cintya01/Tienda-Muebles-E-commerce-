@@ -3,7 +3,7 @@ html{
 }
 *,*:before, *:after {
     box-sizing: inherit;
-    margin: 0px;
+   
 }
 /*Globales*/
 
@@ -14,19 +14,18 @@ a{
 
 .container{
     max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
+    margin: 0 auto;
 }
 
 
 /*Header y Navegacion*/
-.nombre-sitio{
+
+.site-name{
     margin: 50px 0 50px 0;
     text-align: center;
 
 }
-.nombre-sitio span{
+.site-name span{
     color: #037bc0
 }
 .container-nav-ppal{
@@ -34,6 +33,8 @@ a{
 }
 .nav-principal{
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero{
@@ -45,8 +46,36 @@ a{
 
 /*Box Model*/
 
-.sobre-nosotros{
+.about-us{
     width: 200px;
     padding: 25px;
-
 }
+
+/*Categories*/
+.categories-title h2{
+    text-align: center;
+}
+.categories-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.categories a{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categories a:hover{
+    color:#e1e1e1;
+    background-color: #037bc0;
+    border-bottom-right-radius: 10px;
+}
+
+img{
+   display: block;
+   max-width: 100%;
+}
+
