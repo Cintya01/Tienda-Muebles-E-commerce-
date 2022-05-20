@@ -1,18 +1,43 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&family=Manrope:wght@400;600;700&family=Water+Brush&display=swap');
+
+/*Globals*/
+
 html{
     box-sizing: border-box;
+    font-size: 62.5%; /*1REM=10px*/
 }
-*,*:before, *:after {
+* {
     box-sizing: inherit;
-   
+    background-color: #FAFFF0;
+    font-family: 'Manrope', sans-serif;
 }
-/*Globales*/
 
 a{
     text-decoration: none;
     color:#000;
+    font-size: 1.5rem;
+
 }
 
-.container{
+img{
+    display: block;
+    max-width: 100%;
+ }
+
+ h1, h1 span{
+    font-family: 'Water Brush', cursive;
+    font-size: 5rem;
+
+ }
+
+ h2,h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3rem;
+   
+ }
+
+ .container{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -23,14 +48,17 @@ a{
 .site-name{
     margin: 50px 0 50px 0;
     text-align: center;
-
 }
+
 .site-name span{
-    color: #037bc0
+    color: #7B924F;
 }
 .container-nav-ppal{
     border-top: 1px solid #e1e1e1;
 }
+
+
+
 .nav-principal{
     padding: 20px 0;
     display: flex;
@@ -58,7 +86,7 @@ a{
 .categories-list{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 2rem;
 }
 
 .categories a{
@@ -70,12 +98,8 @@ a{
 
 .categories a:hover{
     color:#e1e1e1;
-    background-color: #037bc0;
+    background-color: #7B924F;
     border-bottom-right-radius: 10px;
 }
 
-img{
-   display: block;
-   max-width: 100%;
-}
 
